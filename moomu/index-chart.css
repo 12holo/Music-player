@@ -1,0 +1,322 @@
+:root{
+    
+    /* 기분들 컬러  */
+    --red-color: #FA5164;
+    --yellow-color: #FFD35D;
+    --green-color: #3BCD7C;
+    --yellow-color: #7FAACC;
+    --pink-color: #FEABA3;
+    --dark-blue-color: #44679D;
+
+
+    /* 회색(1,2) */
+    --gray1-color: #555C60;
+    --gray2-color: #CACACA;
+
+    /* 화면크기별 폰트사이즈 */
+    --sml-font-title-b: 16px;
+    --sml-font-body-14: 14px; 
+    --sml-font-body-12: 12px;
+    --sml-font-body-10: 10px;
+
+    --lg-font-title-b: 24px;
+    --lg-font-body-24: 24px;
+    --lg-font-body-22: 22px;
+    --lg-font-body-18: 18px;
+    --lg-font-body-14: 14px;
+
+    /* 폰트 굵기 */
+    --font-light:'GmarketSansLight';
+    --font-bold:'GmarketSansBold';
+
+
+}
+
+  @font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+  @font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+  @font-face {
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F8FAF7;
+    overflow: hidden;
+
+}
+/* 상단바(빈 공간) */
+#top-bar{
+    width: 100%;
+    height: 44px;
+}
+
+/* 로고 */
+.logo{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.logo img{
+    width: 40%;
+}
+
+/* 월 선택 */
+.info-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    text-align: center;
+}
+.info-text h1{
+    font-family: 'GmarketSansLight';
+    font-size: var(--lg-font-body-18);
+    margin: 0 25px;
+}
+.arrow{
+    display: inline-block;
+    height: 15px;
+}
+.next{
+    transform: rotate(180deg);
+}
+
+
+/* 큰 기분이들 숨기기 */
+.container-lg{
+    display: none;
+     
+}
+
+.chart-back-lg{
+    display: inline-block;
+    width: 35px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+/* 기분이들 */
+.container-sml{
+    display: flex;
+    flex-wrap: wrap;
+
+    /* background-color: aliceblue; */
+    
+}
+.mood-count{
+    width: 50%;
+    display: inline-block;
+    padding: 5px 0;
+    margin-left: -4px;
+}
+.mood-count.left{
+    padding-left: 25px;
+}
+.mood-count.right{
+    padding-right: 25px;
+}
+.mood-count > h2{
+    width: 48px;
+    height: 12px;
+    line-height: 12px;
+    margin: 0 auto 5px;
+    text-align: center;
+    font-family: 'GmarketSansMedium';
+    font-size: var(--lg-font-body-18);
+    background-color: #B8C4C2;
+   
+}
+.comfortable-sml{
+    width: 175px;
+    display: block;
+    margin: 0 auto;
+}
+.happy-sml{
+    width: 175px;
+    display: block;
+    margin: 0 auto;;
+  
+}
+.insomnia-sml{
+    width: 175px;
+    display: block;
+    margin: 20px auto 0 auto;
+   
+}
+.excited-sml{
+    width: 175px;
+    display: block;
+    margin: 0 auto;
+    
+}
+.angry-sml{
+    width: 175px;
+    display: block;
+    margin: 0 auto;
+}
+.sad-sml{
+    width: 175px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+
+
+
+
+@media (min-width:600px){
+ /* body{
+    overflow: visible;
+ }
+     */
+        /* 로고 */
+    .logo{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .logo img{
+        width: 20%;
+    }
+
+    /* 월 선택 */
+    .info-text{
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        margin: 40px 0;
+        /* text-align: center; */
+    }
+    .info-text h1{
+        /* font-family: 'GmarketSansLight'; */
+        font-size: 32px;
+        margin: 0 35px;
+    }
+    .arrow{
+        /* display: inline-block; */
+        height: 25px;
+    }
+    /* .next{
+        transform: rotate(180deg);
+    } */
+
+    /* 큰 기분이들 */
+    .container-lg{
+        display: inline-block;
+        width: 80vw;
+       
+        margin: 0 auto;
+        overflow-y: hidden;
+        /* scroll-behavior: smooth; */
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* 인터넷익스플로러 */
+        user-select: none;
+    }
+    .mood{
+        display: inline-block;
+        width: 20vh;
+        height: 20vh;
+        margin-left: -4px;
+    }
+
+
+    .chart-back-lg{
+        width: 70px;
+        display: inline-block;
+        position: absolute;
+        top: 60px;
+        left: 60px;
+    }
+
+    /*  큰 기분이들 이미지 */
+        /* 기분이들 */
+    .container-lg{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;        
+    }
+    .mood-count{
+        width: 30%;
+        display: inline-block;
+        padding: 30px 0;
+        margin-left: -4px;
+        flex-grow: 1;
+    }
+    .mood-count > h2{
+        width: 48px;
+        height: 12px;
+        line-height: 12px;
+        margin: 0 auto 20px;
+        text-align: center;
+        font-family: 'GmarketSansMedium';
+        font-size: var(--lg-font-body-18);
+        background-color: #B8C4C2;
+    }
+
+
+    .comfortable-lg{
+        transform: scale(1.4);
+        display: block;
+        margin: 0 auto;
+    }
+    .happy-lg{
+        transform: scale(1.4);
+        display: block;
+        margin: 0 auto;;
+    
+    }
+    .insomnia-lg{
+        transform: scale(1.4);
+        display: block;
+        margin: 20px auto 0 auto;
+    
+    }
+    .excited-lg{
+        transform: scale(1.4);
+        display: block;
+        margin: 0 auto;
+        
+    }
+    .angry-lg{
+        transform: scale(1.4);
+        display: block;
+        margin: 0 auto;
+    }
+    .sad-lg{
+        transform: scale(1.4);
+        display: block;
+        margin: 0 auto;
+        
+    }
+
+
+
+    /* 기분이들 숨기기*/
+    .container-sml{
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+}

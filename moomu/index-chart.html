@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moomu</title>
+
+    
+    <!-- jQuery 및 기타 라이브러리 로드 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
+    
+    <!-- CSS 파일 로드 -->
+    <link rel="stylesheet" href="index-chart.css"/>
+
+    <!-- 폰트 어썸 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    
+
+
+</head>
+<body>
+    <!-- 상단바 -->
+    <div id="top-bar"></div>
+
+    <!-- 로고 -->
+    <div class="logo">
+        <img src="new-images/logo_typo.png">
+    </div>
+
+    <!-- 클릭유도 텍스트 -->
+    <div class="info-text">
+        <svg class="arrow previous"  viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.47058 19L0.999992 10L9.47058 1" stroke="#5E5C5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        <h1>6월의 기분</h1>
+        <svg class="arrow next"  viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.47058 19L0.999992 10L9.47058 1" stroke="#5E5C5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+    </div>
+
+    <div class="container-sml">
+        <div class="mood-count left">
+            <h2>05</h2>
+            <img class="mood comfortable comfortable-sml" src="new-images/easy.png">
+        </div>
+        <div class="mood-count rignt">
+            <h2>06</h2>
+            <img class="mood happy happy-sml" src="new-images/happiness.png">
+        </div>
+        <div class="mood-count left">
+            <h2>08</h2>
+            <img class="mood insomnia insomnia-sml" src="new-images/insomnia.png">
+        </div>
+        <div class="mood-count rignt">
+            <h2>02</h2>
+            <img class="mood excited excited-sml" src="new-images/excited.png">
+        </div>
+        <div class="mood-count left">
+            <h2>10</h2>
+            <img class="mood angry angry-sml" src="new-images/angry.png">
+        </div>
+        <div class="mood-count rignt">
+            <h2>04</h2>
+            <img class="mood sad sad-sml" src="new-images/sadness.png">
+        </div>
+    </div> 
+
+    <img class="chart-btn chart-back-lg" src="images/chart-back-lg.png">
+
+    <div class="container-lg">
+        <div class="mood-count">
+            <h2>05</h2>
+            <img class="mood comfortable comfortable-lg" src="new-images/easy.png">
+        </div>
+        <div class="mood-count">
+            <h2>06</h2>
+            <img class="mood happy happy-lg" src="new-images/happiness.png">
+        </div>
+        <div class="mood-count">
+            <h2>08</h2>
+            <img class="mood insomnia insomnia-lg" src="new-images/insomnia.png">
+        </div>
+        <div class="mood-count">
+            <h2>02</h2>
+            <img class="mood excited excited-lg" src="new-images/excited.png">
+        </div>
+        <div class="mood-count">
+            <h2>10</h2>
+            <img class="mood angry angry-lg" src="new-images/angry.png">
+        </div>
+        <div class="mood-count">
+            <h2>04</h2>
+            <img class="mood sad sad-lg" src="new-images/sadness.png">
+        </div>
+    </div>
+    
+    <script>
+        $('.next').click(function(){
+      location.href = "index-chart-next.html";
+        }
+    )
+        $('.previous').click(function(){
+            location.href = "index-chart-previous.html";
+        }
+    )
+        $('.chart-back-lg').click(function(){
+            location.href = "index.html";
+        }
+    )
+    </script>
+</body>
+</html>
